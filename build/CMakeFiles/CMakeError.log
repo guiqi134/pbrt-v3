@@ -1,0 +1,991 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0531a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0531a.dir\Debug\\" /Fd"cmTC_0531a.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0531a.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_bc9f8.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bc9f8.dir\Debug\\" /Fd"cmTC_bc9f8.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_bc9f8.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b54a5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b54a5.dir\Debug\\" /Fd"cmTC_b54a5.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b54a5.vcxproj]
+
+
+
+Determining if files alloca.h exist failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0e499.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e499.dir\Debug\\" /Fd"cmTC_0e499.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c"
+  HAVE_ALLOCA_H.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckIncludeFiles\HAVE_ALLOCA_H.c(2,10): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0e499.vcxproj]
+
+
+Source:
+/* */
+#include <alloca.h>
+
+
+int main(void){return 0;}
+
+Performing C++ SOURCE FILE Test HAVE_ITIMER failed with the following compile output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7bec1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ITIMER /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7bec1.dir\Debug\\" /Fd"cmTC_7bec1.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(4,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_7bec1.vcxproj]
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <signal.h>
+#include <string.h>
+#include <sys/time.h>
+void ReportProfileSample(int, siginfo_t *, void *) { }
+int main() {
+    struct sigaction sa;
+    memset(&sa, 0, sizeof(sa));
+    sa.sa_sigaction = ReportProfileSample;
+    sa.sa_flags = SA_RESTART | SA_SIGINFO;
+    sigemptyset(&sa.sa_mask);
+    sigaction(SIGPROF, &sa, NULL);
+    static struct itimerval timer;
+    return setitimer(ITIMER_PROF, &timer, NULL) == 0 ? 0 : 1;
+}
+
+Performing C++ SOURCE FILE Test HAVE_MMAP failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2f3ad.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_MMAP /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2f3ad.dir\Debug\\" /Fd"cmTC_2f3ad.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,10): fatal error C1083: Cannot open include file: 'sys/mman.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2f3ad.vcxproj]
+
+
+Source file was:
+
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+int main() {
+   int fd = open("foo", O_RDONLY);
+   struct stat s;
+   fstat(fd, &s);
+   size_t len = s.st_size;
+   void *ptr = mmap(0, len, PROT_READ, MAP_FILE | MAP_SHARED, fd, 0);
+   munmap(ptr, len);   
+}
+
+Performing C++ SOURCE FILE Test HAVE_ATTRIBUTE_NOINLINE failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2895e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_ATTRIBUTE_NOINLINE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2895e.dir\Debug\\" /Fd"cmTC_2895e.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,16): error C2065: 'noinline': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2895e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2895e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,27): error C2062: type 'void' unexpected [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2895e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,38): error C2143: syntax error: missing ';' before '{' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2895e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(1,38): error C2447: '{': missing function header (old-style formal list?) [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2895e.vcxproj]
+
+
+Source file was:
+__attribute__((noinline)) void foo() { }
+int main() { }
+Performing C++ SOURCE FILE Test HAVE_POSIX_MEMALIGN failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c9ad3.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_POSIX_MEMALIGN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c9ad3.dir\Debug\\" /Fd"cmTC_c9ad3.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(5,3): error C3861: 'posix_memalign': identifier not found [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c9ad3.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+int main() {
+  void *ptr;
+  posix_memalign(&ptr, 32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_MEMALIGN failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_10b99.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_MEMALIGN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_10b99.dir\Debug\\" /Fd"cmTC_10b99.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(4,17): error C3861: 'memalign': identifier not found [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_10b99.vcxproj]
+
+
+Source file was:
+
+#include <malloc.h>
+int main() {
+    void *ptr = memalign(32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE___THREAD failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b4388.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___THREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b4388.dir\Debug\\" /Fd"cmTC_b4388.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,10): error C2144: syntax error: 'int' should be preceded by ';' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b4388.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b4388.vcxproj]
+
+
+Source file was:
+
+__thread int x; int main() { }
+
+Determining size of off64_t failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_30754.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_30754.dir\Debug\\" /Fd"cmTC_30754.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c"
+  OFF64_T.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_30754.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_30754.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_30754.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_30754.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_30754.vcxproj]
+
+
+C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3a51b.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3a51b.dir\Debug\\" /Fd"cmTC_3a51b.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _fseeko referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_3a51b.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_3a51b.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_3a51b.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_813b5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_813b5.dir\Debug\\" /Fd"cmTC_813b5.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_813b5.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_a4e63.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_GCC_INLINE_ASM_AVX /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a4e63.dir\Debug\\" /Fd"cmTC_a4e63.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(13,1): fatal error C1189: #error:  No GCC style inline asm supported for AVX instructions [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_a4e63.vcxproj]
+
+
+Source file was:
+
+	int main()
+	{
+	 #if defined(__GNUC__) && defined(__SSE2__)
+		 int n   = 0;
+		 int eax = 0;
+		 int edx = 0;
+		 __asm__(
+			 "xgetbv     ;"
+			 "vzeroupper  "
+			 : "=a"(eax), "=d"(edx) : "c"(n) : );
+	 #else
+		 #error No GCC style inline asm supported for AVX instructions
+	 #endif
+	}
+	
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_5af07.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_SYSCONF_NPROCESSORS_ONLN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5af07.dir\Debug\\" /Fd"cmTC_5af07.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /wd4275 /wd4267 /wd4244 /wd4477 /wd4996 /wd4800 /wd4334 /wd4251 /wd4305 /wd4302 /wd4311 /wd4018 /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(2,14): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_5af07.vcxproj]
+
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
+Determining if the include file dlfcn.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_49a3e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_49a3e.dir\Debug\\" /Fd"cmTC_49a3e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'dlfcn.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_49a3e.vcxproj]
+
+
+
+Determining if the include file execinfo.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f97eb.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f97eb.dir\Debug\\" /Fd"cmTC_f97eb.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'execinfo.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f97eb.vcxproj]
+
+
+
+Determining if the include file glob.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0a846.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0a846.dir\Debug\\" /Fd"cmTC_0a846.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'glob.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0a846.vcxproj]
+
+
+
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_96c76.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_96c76.dir\Debug\\" /Fd"cmTC_96c76.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'libunwind.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_96c76.vcxproj]
+
+
+
+Determining if the include file pwd.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d2525.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d2525.dir\Debug\\" /Fd"cmTC_d2525.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'pwd.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_d2525.vcxproj]
+
+
+
+Determining if the include file strings.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_a581c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a581c.dir\Debug\\" /Fd"cmTC_a581c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'strings.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_a581c.vcxproj]
+
+
+
+Determining if the include file sys/syscall.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_64585.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_64585.dir\Debug\\" /Fd"cmTC_64585.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/syscall.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_64585.vcxproj]
+
+
+
+Determining if the include file sys/time.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_0dcc9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0dcc9.dir\Debug\\" /Fd"cmTC_0dcc9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_0dcc9.vcxproj]
+
+
+
+Determining if the include file sys/utsname.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_60ac5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_60ac5.dir\Debug\\" /Fd"cmTC_60ac5.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'sys/utsname.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_60ac5.vcxproj]
+
+
+
+Determining if the include file syscall.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_fef16.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fef16.dir\Debug\\" /Fd"cmTC_fef16.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'syscall.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_fef16.vcxproj]
+
+
+
+Determining if the include file syslog.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_da4fd.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_da4fd.dir\Debug\\" /Fd"cmTC_da4fd.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'syslog.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_da4fd.vcxproj]
+
+
+
+Determining if the include file ucontext.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c6f24.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6f24.dir\Debug\\" /Fd"cmTC_c6f24.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'ucontext.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_c6f24.vcxproj]
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_97a6e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97a6e.dir\Debug\\" /Fd"cmTC_97a6e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_97a6e.vcxproj]
+
+
+
+Determining if the include file unwind.h exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_23756.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_23756.dir\Debug\\" /Fd"cmTC_23756.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: Cannot open include file: 'unwind.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_23756.vcxproj]
+
+
+
+Determining if the include file ext/hash_map exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_866b4.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_866b4.dir\Debug\\" /Fd"cmTC_866b4.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+  CheckIncludeFile.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/hash_map': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_866b4.vcxproj]
+
+
+
+Determining if the include file ext/hash_set exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3d6c3.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3d6c3.dir\Debug\\" /Fd"cmTC_3d6c3.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+  CheckIncludeFile.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/hash_set': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_3d6c3.vcxproj]
+
+
+
+Determining if the include file ext/slist exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2cbb9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2cbb9.dir\Debug\\" /Fd"cmTC_2cbb9.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+  CheckIncludeFile.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'ext/slist': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_2cbb9.vcxproj]
+
+
+
+Determining if the include file tr1/unordered_map exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_55a5c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_55a5c.dir\Debug\\" /Fd"cmTC_55a5c.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+  CheckIncludeFile.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'tr1/unordered_map': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_55a5c.vcxproj]
+
+
+
+Determining if the include file tr1/unordered_set exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_20c22.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_20c22.dir\Debug\\" /Fd"cmTC_20c22.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx"
+  CheckIncludeFile.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.cxx(1,10): fatal error C1083: Cannot open include file: 'tr1/unordered_set': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_20c22.vcxproj]
+
+
+
+Determining size of u_int16_t failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_93371.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_93371.dir\Debug\\" /Fd"cmTC_93371.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c"
+  HAVE_U_INT16_T.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(29,12): error C2065: 'u_int16_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_93371.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(30,12): error C2065: 'u_int16_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_93371.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(31,12): error C2065: 'u_int16_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_93371.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(32,12): error C2065: 'u_int16_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_93371.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CheckTypeSize\HAVE_U_INT16_T.c(33,12): error C2065: 'u_int16_t': undeclared identifier [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_93371.vcxproj]
+
+
+C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CheckTypeSize/HAVE_U_INT16_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(u_int16_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function dladdr exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_a9699.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=dladdr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9699.dir\Debug\\" /Fd"cmTC_a9699.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _dladdr referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_a9699.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_a9699.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_a9699.vcxproj]
+
+
+
+Determining if the function fcntl exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6aad9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fcntl /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6aad9.dir\Debug\\" /Fd"cmTC_6aad9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _fcntl referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_6aad9.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_6aad9.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_6aad9.vcxproj]
+
+
+
+Determining if the function pread exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_9d72c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pread /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d72c.dir\Debug\\" /Fd"cmTC_9d72c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _pread referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_9d72c.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_9d72c.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_9d72c.vcxproj]
+
+
+
+Determining if the function pwrite exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_101e8.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pwrite /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_101e8.dir\Debug\\" /Fd"cmTC_101e8.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _pwrite referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_101e8.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_101e8.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_101e8.vcxproj]
+
+
+
+Determining if the function sigaction exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3cbd8.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sigaction /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3cbd8.dir\Debug\\" /Fd"cmTC_3cbd8.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _sigaction referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_3cbd8.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_3cbd8.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_3cbd8.vcxproj]
+
+
+
+Determining if the function sigaltstack exists failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b93f1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sigaltstack /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b93f1.dir\Debug\\" /Fd"cmTC_b93f1.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol _sigaltstack referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b93f1.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_b93f1.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_b93f1.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_DEPRECATED failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_81e8f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_NO_DEPRECATED /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_81e8f.dir\Debug\\" /Fd"cmTC_81e8f.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue  -Wno-deprecated "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wno-deprecated' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_81e8f.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_8b07f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8b07f.dir\Debug\\" /Fd"cmTC_8b07f.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue  -Wno-unnamed-type-template-args "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line error D8021: invalid numeric argument '/Wno-unnamed-type-template-args' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_8b07f.vcxproj]
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function get_static_proc_name exists in the unwind failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d9ef9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=get_static_proc_name /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9ef9.dir\Debug\\" /Fd"cmTC_d9ef9.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "D:\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+LINK : fatal error LNK1104: cannot open file 'unwind.lib' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_d9ef9.vcxproj]
+
+
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__ failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f1510.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__ /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1510.dir\Debug\\" /Fd"cmTC_f1510.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f1510.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_f1510.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((unused));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_DEFAULT failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_25b41.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__VISIBILITY_DEFAULT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_25b41.dir\Debug\\" /Fd"cmTC_25b41.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,50): error C2143: syntax error: missing ')' before 'string' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,59): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,60): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,61): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_25b41.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("default")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_HIDDEN failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_77e2e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___ATTRIBUTE__VISIBILITY_HIDDEN /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_77e2e.dir\Debug\\" /Fd"cmTC_77e2e.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2061: syntax error: identifier '__attribute__' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,23): error C2059: syntax error: ';' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,50): error C2143: syntax error: missing ')' before 'string' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,58): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,59): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,60): error C2059: syntax error: ')' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_77e2e.vcxproj]
+
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("hidden")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___BUILTIN_EXPECT failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_06e4f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___BUILTIN_EXPECT /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06e4f.dir\Debug\\" /Fd"cmTC_06e4f.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(2,38): warning C4013: '__builtin_expect' undefined; assuming extern returning int [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_06e4f.vcxproj]
+src.obj : error LNK2019: unresolved external symbol ___builtin_expect referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_06e4f.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_06e4f.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_06e4f.vcxproj]
+
+
+Source file was:
+
+int main(void) { if (__builtin_expect(0, 0)) return 1; return 0; }
+
+Performing C SOURCE FILE Test HAVE___SYNC_VAL_COMPARE_AND_SWAP failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_8fb7d.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE___SYNC_VAL_COMPARE_AND_SWAP /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fb7d.dir\Debug\\" /Fd"cmTC_8fb7d.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(4,41): warning C4013: '__sync_val_compare_and_swap' undefined; assuming extern returning int [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_8fb7d.vcxproj]
+src.obj : error LNK2019: unresolved external symbol ___sync_val_compare_and_swap referenced in function _main [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_8fb7d.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\Debug\cmTC_8fb7d.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_8fb7d.vcxproj]
+
+
+Source file was:
+
+int main(void)
+{
+  int a; if (__sync_val_compare_and_swap(&a, 0, 1)) return 1; return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_RWLOCK failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_72fba.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_RWLOCK /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72fba.dir\Debug\\" /Fd"cmTC_72fba.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c"
+  src.c
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.c(3,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_72fba.vcxproj]
+
+
+Source file was:
+
+#define _XOPEN_SOURCE 500
+#include <pthread.h>
+int main(void)
+{
+  pthread_rwlock_t l;
+  pthread_rwlock_init(&l, NULL);
+  pthread_rwlock_rdlock(&l);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test STL_NO_NAMESPACE failed with the following output:
+Change Dir: C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_fec38.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30145 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D STL_NO_NAMESPACE /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fec38.dir\Debug\\" /Fd"cmTC_fec38.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx"
+  src.cxx
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,7): error C2143: syntax error: missing ';' before '<' [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_fec38.vcxproj]
+C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\src.cxx(3,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\CMakeFiles\CMakeTmp\cmTC_fec38.vcxproj]
+
+
+Source file was:
+
+#include <vector>
+vector<int> t; int main() { }
+

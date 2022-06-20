@@ -205,7 +205,7 @@ Spectrum TabulatedBSSRDF::Sr(Float r) const {
         int rhoOffset, radiusOffset;
         Float rhoWeights[4], radiusWeights[4];
         if (!CatmullRomWeights(table.nRhoSamples, table.rhoSamples.get(),
-                               rho[ch], &rhoOffset, rhoWeights) ||
+                               rho[ch], &rhoOffset, rhoWeights) || // the offset is start index for all 4 interpolation values
             !CatmullRomWeights(table.nRadiusSamples, table.radiusSamples.get(),
                                rOptical, &radiusOffset, radiusWeights))
             continue;
@@ -222,6 +222,7 @@ Spectrum TabulatedBSSRDF::Sr(Float r) const {
         }
 
         // Cancel marginal PDF factor from tabulated BSSRDF profile
+        // This multiplicative factor of (2 * Pi * rOptical) comes from the entries of BSSRDFTable::profile
         if (rOptical != 0) sr /= 2 * Pi * rOptical;
         Sr[ch] = sr;
     }

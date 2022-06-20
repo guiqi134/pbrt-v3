@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A6D9355-D3DE-30F1-84C6-D4DBF1EB60D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Imath;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Half;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Iex;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\OpenEXR\IlmImf;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\IlmBase\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\OpenEXR\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\glog\src;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\glog;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\ptex\src\ptex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Imath;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Half;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Iex;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\OpenEXR\IlmImf;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\IlmBase\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\OpenEXR\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\glog\src;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\glog;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\ptex\src\ptex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Imath;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Half;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Iex;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\OpenEXR\IlmImf;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\IlmBase\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\OpenEXR\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\glog\src;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\glog;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\ptex\src\ptex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\zlib;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Imath;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Half;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\IlmBase\Iex;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\openexr\OpenEXR\IlmImf;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\IlmBase\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\openexr\OpenEXR\config;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\glog\src;C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\glog;C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\ptex\src\ptex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\src\ext\ptex\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/69564/source/repos/guiqi134/pbrt-v3/src/ext/ptex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/69564/source/repos/guiqi134/pbrt-v3 -BC:/Users/69564/source/repos/guiqi134/pbrt-v3/build --check-stamp-file C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/src/ext/ptex/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.24\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/69564/source/repos/guiqi134/pbrt-v3/src/ext/ptex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/69564/source/repos/guiqi134/pbrt-v3 -BC:/Users/69564/source/repos/guiqi134/pbrt-v3/build --check-stamp-file C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/src/ext/ptex/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.24\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/69564/source/repos/guiqi134/pbrt-v3/src/ext/ptex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/69564/source/repos/guiqi134/pbrt-v3 -BC:/Users/69564/source/repos/guiqi134/pbrt-v3/build --check-stamp-file C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/src/ext/ptex/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.24\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/69564/source/repos/guiqi134/pbrt-v3/src/ext/ptex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/69564/source/repos/guiqi134/pbrt-v3 -BC:/Users/69564/source/repos/guiqi134/pbrt-v3/build --check-stamp-file C:/Users/69564/source/repos/guiqi134/pbrt-v3/build/src/ext/ptex/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\CMake\share\cmake-3.24\Modules\CTest.cmake;D:\CMake\share\cmake-3.24\Modules\CTestTargets.cmake;D:\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;D:\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.24\Modules\DartConfiguration.tcl.in;D:\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.24\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\ZERO_CHECK.proj">
+      <Project>{D05B8748-3D16-3C78-8AF5-4A68DF668FBF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\ptex\Ptex_static.vcxproj">
+      <Project>{9E78E03F-AFAA-3EB4-A1C9-3C8B147528A8}</Project>
+      <Name>Ptex_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\tests\ftest.vcxproj">
+      <Project>{49173655-63DA-317B-A2A6-66A535BC123E}</Project>
+      <Name>ftest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\tests\halftest.vcxproj">
+      <Project>{CBFEA72A-5807-3438-BCE0-CE91DC15CFB0}</Project>
+      <Name>halftest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\utils\ptxinfo.vcxproj">
+      <Project>{CBECAEB6-AA7D-3953-97F0-330B6C70F4F6}</Project>
+      <Name>ptxinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\tests\rtest.vcxproj">
+      <Project>{EFE459BC-F1C5-391D-8D68-24F1212985F1}</Project>
+      <Name>rtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\69564\source\repos\guiqi134\pbrt-v3\build\src\ext\ptex\src\tests\wtest.vcxproj">
+      <Project>{20755C7D-D35D-3FB7-8245-8E9F5CE69D6F}</Project>
+      <Name>wtest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

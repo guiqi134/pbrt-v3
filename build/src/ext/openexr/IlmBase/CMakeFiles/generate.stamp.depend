@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/69564/source/repos/guiqi134/pbrt-v3/src/ext/openexr/IlmBase/CMakeLists.txt
+D:/CMake/share/cmake-3.24/Modules/CPack.cmake
+D:/CMake/share/cmake-3.24/Modules/CPackComponent.cmake
+D:/CMake/share/cmake-3.24/Templates/CPackConfig.cmake.in

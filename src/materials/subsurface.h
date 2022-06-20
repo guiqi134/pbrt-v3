@@ -73,6 +73,8 @@ class SubsurfaceMaterial : public Material {
           table(100, 64) {
         ComputeBeamDiffusionBSSRDF(g, eta, &table);
     }
+    // Compute current point's texture coordinate from *si and then
+    // Compute BSDF/BSSRDF properties and pass to the SurfaceInteraction *si
     void ComputeScatteringFunctions(SurfaceInteraction *si, MemoryArena &arena,
                                     TransportMode mode,
                                     bool allowMultipleLobes) const;
